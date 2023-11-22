@@ -1,61 +1,46 @@
 <!-- 
-    This page was created by ChatGPT
-    I only added some styles, the video and the image.
--->
+
+    Assignment requirements:
+    1. Create a GitHub repository for this assignment and clone it to your computer as a subfolder inside of your folder for coursework. 
+    2. On Wednesday, you created an HTML-only web page for a topic of your choice (if you have not finished this, please complete that
+       before continuing with this assignment). Make a copy of this file inside of your clones repository and more content to the HTML as follows:
+        2.1. The navigation bar should have at least 4 items
+        2.2. At least 3 images should be included together within a shared container element (div, section)
+        2.3. A section with 4-6 different elements should be included (in a recipe page for example, this could be cuisines)
+    3. Design the layout and theme for your website (on paper or any visual software). The theme should include the font families you want to use,
+       and the page colours. How will the page look on a computer? How will it look on a mobile device? Some requirements:
+        3.1. The navigation bar must be included at the top with the menu options side by side 
+        3.2. The 3+ images should be displayed side by side in computer mode. In mobile mode the images should be displayed one on top of the other 
+        3.3. The 4-6 options should be displayed as a grid. If you want a challenge, make each grid item have multiple sub-elements (eg a picture and a heading) 
+        3.4. The form and the table that you created on Wednesday should be styled too 
+    4. Now, create a CSS file that will style your web page to match your design. Make sure it is responsive so that it will look as expected on 
+       computers vs mobile devices. Hint: Don't forget to link it to your HTML!
+    5. Commit and push your changes to your GitHub repository. Make sure to check that the changes were uploaded correctly on GitHub
+
+ -->
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale=1,maximum-scale=1" />
+
     <title>Exploring Soccer</title>
-    <style>
-        /* Add some basic styling */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: rgb(34, 142, 34);
-        }
-
-        header,
-        nav,
-        section,
-        footer {
-            padding: 20px;
-            background-color: rgb(28, 114, 28);
-            color: white;
-        }
-
-        section {
-            margin: 20px;
-        }
-
-        img {
-            max-width: 25%;
-            height: auto;
-            margin-left: 50%;
-            transform: translateX(-50%);
-        }
-
-        video {
-            width: 80%;
-            height: auto;
-            margin-left: 50%;
-            transform: translateX(-50%);
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <header>
-        <h1>Welcome to Soccer  Field!</h1>
+        <h1>Welcome to Soccer Field!</h1>
     </header>
 
     <nav>
         <ul>
             <li><a href="#history">History</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About</a></li>
         </ul>
     </nav>
 
@@ -64,16 +49,21 @@
         <p>Soccer, known as football in most countries, has a rich history...</p>
         <p>It originated in ancient China and has evolved into the modern sport we know today.</p>
 
-        <h3>Key Milestones</h3>
+        <h3>Top 2 in the world</h3>
         <ul>
             <li>First rules codified in England, 1863</li>
             <li>First FIFA World Cup held in 1930</li>
             <li>Introduction of VAR (Video Assistant Referee) in recent years</li>
         </ul>
 
-        <img src="./SoccerBall.png" alt="Soccer ball">
+        <div class="images">
 
-        <h3>A Short Video</h3>
+            <img src="./img1.svg" alt="Soccer ball">
+            <img src="./SoccerBall.png" alt="Soccer ball">
+            <img src="./img2.svg" alt="Soccer ball">
+        </div>
+
+        <h3>A WikiHow of how yo play Soccer</h3>
         <video width="400" controls>
             <source src="./How to Play Soccer.mp4" type="video/mp4">
             Your browser does not support HTML video.
