@@ -1,0 +1,135 @@
+<!-- 
+    This page was created by ChatGPT
+    I only added some styles, the video and the image.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exploring Soccer</title>
+    <style>
+        /* Add some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(34, 142, 34);
+        }
+
+        header,
+        nav,
+        section,
+        footer {
+            padding: 20px;
+            background-color: rgb(28, 114, 28);
+            color: white;
+        }
+
+        section {
+            margin: 20px;
+        }
+
+        img {
+            max-width: 25%;
+            height: auto;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+
+        video {
+            width: 80%;
+            height: auto;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Soccer  Field!</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#history">History</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
+    </nav>
+
+    <section id="history">
+        <h2>History of Soccer</h2>
+        <p>Soccer, known as football in most countries, has a rich history...</p>
+        <p>It originated in ancient China and has evolved into the modern sport we know today.</p>
+
+        <h3>Key Milestones</h3>
+        <ul>
+            <li>First rules codified in England, 1863</li>
+            <li>First FIFA World Cup held in 1930</li>
+            <li>Introduction of VAR (Video Assistant Referee) in recent years</li>
+        </ul>
+
+        <img src="./SoccerBall.png" alt="Soccer ball">
+
+        <h3>A Short Video</h3>
+        <video width="400" controls>
+            <source src="./How to Play Soccer.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+        </video>
+    </section>
+
+    <section id="skills">
+        <h2>Soccer Skills</h2>
+        <p>Soccer requires a combination of various skills...</p>
+        <p>From dribbling to shooting, mastering these skills...</p>
+
+        <h3>Essential Skills</h3>
+        <ol>
+            <li>Dribbling</li>
+            <li>Passing</li>
+            <li>Shooting</li>
+        </ol>
+
+        <table>
+            <caption>Players and Positions</caption>
+            <tr>
+                <th>Position</th>
+                <th>Player</th>
+            </tr>
+            <tr>
+                <td>Forward</td>
+                <td>Lionel Messi</td>
+            </tr>
+            <tr>
+                <td>Midfielder</td>
+                <td>Kevin De Bruyne</td>
+            </tr>
+            <tr>
+                <td>Defender</td>
+                <td>Sergio Ramos</td>
+            </tr>
+        </table>
+
+        <h3>Join a Soccer Clinic!</h3>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age"><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Soccer Explorer</p>
+    </footer>
+</body>
+
+</html>
